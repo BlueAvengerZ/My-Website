@@ -1,0 +1,661 @@
+/* Font styling Start */
+
+
+/* legger til font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Font styling End */
+
+
+
+/* all elements styling Start */
+
+
+/* gir alle elementer posisjon og størrelse. også fjerner text stil til alle elementer  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+
+/* all elements styling End */
+
+
+
+
+/* custom scroll bar Start */
+
+
+
+/* gir scrollbar bredde og oransje bakgunnsfarge.
+   Også hvis man har pilen over scrollbar bytter bakgunnsfarge til blå */
+
+  ::-webkit-scrollbar {
+      width: 10px;
+
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: orange;
+
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+      background: blue;
+  }
+
+/* custom scroll bar End */
+
+
+
+
+
+/* menu-bar styling Start */
+
+
+
+/* gir posisjon for menu bar. */
+
+.max-width {
+  padding: 0 80px;
+  margin: auto;
+}
+
+
+/* gir menu bar posisjon, bredde, verdi og font.
+  også hvor mye tid skal den ta, til menu bar får bakgunnsfarge blå. */
+
+.menu-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: 0.3s;
+}
+
+
+
+/* når man blar ned, får menu bar bakgunnsfarge blå. */
+
+.menu-bar.sticky {
+  padding: 15px 0;
+  background: blue;
+}
+
+
+/* gir posisjon for menu bar og mellerom */
+
+.menu-bar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* gir hvit farge til kallenavn min og hvor mye tykt skal den være */
+
+.menu-bar .nickname a {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  }
+
+
+/* gir blå farge til forkortelse av kallenavn min. */
+
+.menu-bar .nickname a span{
+  color: blue;
+
+}
+
+/* når man blar ned, bytter forkortelse av kallenavn min, farge til hvit. */
+
+.menu-bar.sticky .nickname a span {
+  color: white;
+}
+
+
+/* gir retning for menu bar tittelene */
+
+.menu-bar .menu li {
+  display: inline-block;
+}
+
+
+/* gir fontstørrelse og hvit farge til menu bar tittel.
+   Også hvor mye tykt skal den være og hvor mye tid skal den ta, til den bytter farge. */
+
+.menu-bar .menu li a {
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  margin-left: 14px;
+  transition: color 0.3s;
+}
+
+
+/* menu bar tittel får blå farge, når man tar pilen over den. */
+
+.menu-bar .menu li a:hover {
+  color: blue;
+
+}
+
+
+/* når menu bar har bakgunnsfarge blå. får menu bar tittel farge hvit, når man tar pilen over den. */
+
+.menu-bar.sticky .menu li a:hover {
+  color: white;
+}
+
+/* menu-bar styling End */
+
+
+
+
+/* menu-icon styling Start */
+
+
+
+/* gir menu icon og kryss icon hvit farge og fontstørrelse.
+   Også sier jeg at, de skal ikke vises på skjermen og
+   de skal få peke tegn, når man har pil over den. */
+
+.menu-icon {
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+/* menu-icon styling End */
+
+
+
+
+/* Moviepage styling Start */
+
+/* legger til bakgrunn for homepage min. etter det gir jeg font, hvit farge, posisjon
+   og bakgrunnshøyde til homepage min. Også sier jeg at, bakgrunne skal dekke hele homepage. */
+
+.moviepage {
+  background: url("https://wallpaperplay.com/walls/full/3/1/6/169826.jpg");
+  display: flex;
+  color: white;
+  height: 100vh;
+  background-size: cover;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+
+/* lager box til filmen min. etter det gir jeg den bredde, høyde, posisjon, shadow og bakgrunn svart.
+   Også sier jeg at, det skal være mindre firekantete og gjør bakgrunn til transparent. */
+
+.movie {
+  width: 100%;
+  height: 400px;
+  margin-top: 5%;
+  border: 2px solid black;
+  box-shadow: 0 5px 38px red;
+  background: linear-gradient(rgba(0, 0, 0, 0.9), 100%,transparent);
+  border-radius: 20px;
+
+}
+
+
+/* Moviepage styling End */
+
+
+
+
+/* movie image styling Start */
+
+
+/* gir posisjon til avsnitt og bilde, for filmen. */
+
+.image {
+  margin-left: 2%;
+  margin-top: 2%;
+
+}
+
+
+/* gir posisjon, bredde, fontstørrelse, gul farge og shadow til avsnitt for filmen. */
+
+.image p {
+  font-size: 34px;
+  width: 40%;
+  color: yellow;
+  position: absolute;
+  display: inline-block;
+  margin-left: 3%;
+  margin-top: 2%;
+  border-bottom: 2px solid silver;
+  box-shadow: 0 5px 8px red;
+}
+
+
+/* gir bredde og høyde til bilde for filmen. */
+
+.image img {
+  width: 40%;
+  height: 300px;
+
+}
+
+
+/* movie styling End */
+
+
+
+/* gir størrelse og posisjon til play icon. */
+
+.play img {
+  margin-top: -4%;
+  height: 100px;
+  width: 100px;
+}
+
+
+/* gir hvit farge, fontstørrelse og posisjon til play teksten. også hvor mye tykt skal den være
+   og mellerom mellom bokstav. etter det gjør jeg alle små bokstaver til store bokstaver
+   og den skal få peke tegn når man har pilen over den. */
+
+.play {
+  display: inline-flex;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 6px;
+  cursor: pointer;
+  color: white;
+
+}
+
+
+/* play-icon styling End */
+
+
+
+/* Video styling Start */
+
+
+/* gir video min posisjon, verdi, størrelse og bagrunn svart.
+   Også hvor mye synlig skal bakgrunn være til video og video skal være hjemt */
+
+.film {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.95);
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+}
+
+
+/* video skal vises når man klikker på play icon eller play teksten */
+
+.film.active {
+  visibility: visible;
+}
+
+
+/* gir maks bredde til video og fjerner linje rundt video. */
+
+.film video {
+  max-width: 900px;
+  outline: none;
+}
+
+
+/* gir posisjon og maks bredde til kryss icon. også får den peke tegn når man tar pilen over den. */
+
+.film .close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  max-width: 32px;
+}
+
+/* Video styling End */
+
+
+
+
+
+/* footer section styling Start */
+
+
+/* gir bakgrunn blå og posisjon til under tekst. */
+
+footer {
+    background: blue;
+    padding: 14px 23px;
+    text-align: center;
+}
+
+
+/* gir fontstørrelse og hvit farge til under tekst 1. også hvor mye tykt skal den være og
+   fjerner text stil. */
+
+footer h3 {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* gir fontstørrelse og hvit farge til under tekst 2. også fjerner jeg text stil til den. */
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+
+/* gir text stil til under tekst 2 og når man tar pilen over den, så får den linje under. */
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* footer section styling End */
+
+
+
+
+
+
+/* responsive media query Start */
+
+  @media (max-width: 1000px) {
+
+  /* når bredde er 1000 til skjermen, så skal max-width klasser bytte posisjon */
+
+    .max-width {
+        padding: 0 50px;
+    }
+  }
+
+
+@media (max-width: 978px) {
+
+/* gir maks bredde til klasse max-width. */
+
+  .max-width {
+    max-width: 800px;
+  }
+
+
+/* når bredde er 978 til skjermen, så skal menu icon vises på skjermen */
+
+ .menu-icon {
+     display: block;
+     z-index: 4;
+ }
+
+
+ /* når bredde er 978 til skjermen, så skal kryss icon vises på skjermen, men først klikk på menu icon  */
+
+ .menu-icon i.active:before {
+     content: "\f00d";
+ }
+
+
+ /* gir posisjon, høyde, bredde og bakgrunn svart til menu bar bakgrunn. også hvor mye tid skal ta,
+    til menu bar popper opp, når man klikker på menu icon. Det gjelder bare når bredde til skjermen er 978. */
+
+  .menu-bar .menu {
+    position: fixed;
+    height:100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    padding-top: 80px;
+    background: black;
+    text-align: center;
+    transition: 0.3s;
+
+  }
+
+
+/* gir posisjon til menu bar og den skal aktivere, når man klikker på menu icon.
+   Det gjelder bare når bredde til skjermen er 978. */
+
+  .menu-bar .menu.active {
+    left: 0;
+  }
+
+
+/* gir retning til menu bar tittelene. Det gjelder bare mår bredde til skjermen er 978. */
+
+  .menu-bar .menu li {
+    display: block;
+  }
+
+
+/* gir retning til menu bar tittelene. Det gjelder bare når bredde til skjermen er 978. */
+
+  .menu-bar .menu li a {
+    display: inline-block;
+    margin: 25px 0;
+    font-size: 25px;
+  }
+
+
+  /*  gir bredde og høyde til play icon.
+      Det gjelder bare når bredde til skjermen er 978. */
+
+    .play img {
+       height: 100px;
+       width: 100px;
+     }
+
+
+   /*  gir fonstørrelse til play teksten.
+       Det gjelder bare når bredde til skjermen er 978. */
+
+     .play {
+       font-size: 30px;
+     }
+
+  /*  gir maks bredde til video og fjerner linje rundt video.
+      Det gjelder bare når bredde til skjermen er 978. */
+
+     .film video {
+       max-width: 370px;
+       outline: none;
+     }
+   }
+
+
+ /*  gir posisjon, bredde og fonstørrelse til avsnitt for bilde.
+     Det gjelder bare når bredde til skjermen er 978. */
+
+  .image p {
+    margin-top: 7%;
+    width: 42%;
+    font-size: 25px;
+  }
+
+}
+
+
+
+@media (max-width: 690px) {
+
+/* når bredde er 690 til skjermen, så skal max-width klasser bytte posisjon */
+
+  .max-width {
+      padding: 0 23px;
+  }
+
+
+/*  gir bredde og høyde til bilde for filmen.
+    Det gjelder bare når bredde til skjermen er 978. */
+
+    .image img {
+      width: 50%;
+      height: 250px;
+    }
+
+
+
+
+   /*  gir bredde og høyde til play icon.
+       Det gjelder bare når bredde til skjermen er 690. */
+
+       .play img {
+          height: 100px;
+          width: 100px;
+        }
+
+
+  /*  gir fonstørrelse til play teksten.
+      Det gjelder bare når bredde til skjermen er 690. */
+
+      .play {
+        font-size: 30px;
+      }
+
+   /*  gir maks bredde til video og fjerner linje rundt video.
+       Det gjelder bare når bredde til skjermen er 690. */
+
+      .film video {
+        max-width: 370px;
+        outline: none;
+      }
+    }
+
+
+    /*  gir posisjon, bredde og fonstørrelse til avsnitt for bilde.
+        Det gjelder bare når bredde til skjermen er 690. */
+
+     .image p {
+       margin-top: 3%;
+       margin-left: 3%;
+       font-size: 23px;
+     }
+
+}
+
+
+
+@media (max-width: 528px) {
+
+
+/*  gir bredde og høyde til play icon.
+    Det gjelder bare når bredde til skjermen er 528. */
+
+  .play img {
+     height: 60px;
+     width: 60px;
+   }
+
+
+  /*  gir fonstørrelse til play teksten.
+      Det gjelder bare når bredde til skjermen er 528. */
+
+   .play {
+     font-size: 20px;
+   }
+
+
+   /*  gir maks bredde til filmen og fjerner linje rundt fimen.
+       Det gjelder bare når bredde til skjermen er 528. */
+
+   .film video {
+     max-width: 370px;
+     outline: none;
+   }
+
+
+   /*  gir posisjon og maks bredde til kryss icon, som er for filmen.
+       også når man tar pilen over den, så kommer det peke tegn.
+       Det gjelder bare når bredde til skjermen er 528. */
+
+     .film .close {
+       margin-left: 3%;
+       position: absolute;
+       cursor: pointer;
+       max-width: 20px;
+     }
+
+
+  /* gir bredde og høyde til bilde for filmen.
+     Det gjelder bare når bredde til skjermen er 528. */
+
+     .image img {
+      width: 200px;
+      height: 200px;
+     }
+
+
+  /*  gir posisjon, bredde og fonstørrelse til avsnitt for bilde.
+      Det gjelder bare når bredde til skjermen er 528. */
+
+     .image p{
+       margin-top: 3%;
+       margin-left: 12px;
+       font-size: 17px;
+     }
+
+
+}
+
+
+
+@media (max-width: 500px) {
+
+/*  gir bredde og høyde til play icon.
+    Det gjelder bare når bredde til skjermen er 500. */
+
+   .play img {
+      height: 50px;
+      width: 50px;
+    }
+
+
+/*  gir fonstørrelse og posisjon til play teksten.
+    Det gjelder bare når bredde til skjermen er 500. */
+
+    .play {
+      margin-top: 10px;
+      font-size: 25px;
+    }
+
+
+ /*  gir maks bredde til filmen og fjerner linje rundt fimen.
+     Det gjelder bare når bredde til skjermen er 500. */
+
+    .film video {
+      max-width: 400px;
+      outline: none;
+    }
+
+
+/*  gir bredde og fonstørrelse til avsnitt for bilde.
+    Det gjelder bare når bredde til skjermen er 500. */
+
+    .image p {
+      width: 40%;
+      font-size: 17px;
+    }
+
+}
+
+/* responsive media query End */

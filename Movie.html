@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- linker til css filen -->
+
+    <link rel="stylesheet" href="../Css filer/Movie.css">
+
+    <!-- gir tittel for nettsiden min -->
+
+    <title>Movie</title>
+
+    <!-- Legger til script kode for menu-bar icon -->
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Legger til script kode for menu-bar, menu-bar icon, skrivene tekst og teams bokser -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+  </head>
+
+  <body>
+
+
+  <!-- menu-bar navigaistion Start -->
+
+  <!-- lager klasse for, men-bar, menu-icon, kallenavn min.
+       Derettter linker jeg de forsjellige sider og legger til menu-icon. -->
+
+  <nav class="menu-bar">
+
+    <div class="max-width">
+    <div class="nickname"> <a href="index.html">BlueAvengerZ<span>.BAZ</span></a></div>
+
+      <ul class="menu">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Movies</a></li>
+        <li><a href="Games.html">Games</a></li>
+        <li><a href="Game_Story.html">Story Game</a></li>
+        <li><a href="Schedule.html">Schedule</a></li>
+        <li><a href="Social_media.html">Social Media</a></li>
+        <li><a href="My_Projects.html">My Projects</a></li>
+        <li><a href="Report.html">My Report</a></li>
+
+      </ul>
+
+    <div class="menu-icon">
+       <i class="fas fa-bars"></i>
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- menu-bar navigaistion End -->
+
+
+
+
+<!-- Moviepage section Start -->
+
+<!-- legger til seksjon, gir den en klasse.
+     Etter det lager jeg forsjellige klasse for, avsnitt, bilder, play icon, kryss icon og filmen.
+     Deretter legger jeg til avsnitt, play-icon, kryss-icon (bilde), bilde til filmen og en selve film. -->
+
+<section class="moviepage">
+
+<div class="max-width">
+
+
+  <div class="movie">
+
+    <div class="image">
+      <img src="../Matriale/Bilder/The_Bag.jpg" alt="bilde av filmen">
+      <p>This movie is about two gangs. Where one of the gang that has the bag and the other gang that try to steal that bag. In the end, no one knows what happened at the end of the film.</p>
+    </div>
+
+    <div class="play">
+      <a href="#" class="play" onclick="toggle();"><img src="../Matriale/Bilder/play.png" alt="Play">Watch Movie</a>
+    </div>
+
+  </div>
+
+  <div class="film">
+    <img src="../Matriale/Bilder/close.png" class="close" onclick="toggle();">
+    <video src="../Matriale/Videoer/The bag.mp4" controls></video>
+  </div>
+
+</div>
+
+</section>
+
+<!-- Moviepage section End -->
+
+
+
+
+<!-- footer section Start -->
+
+
+
+<!-- legger til bunntekst -->
+
+   <footer>
+     <h3>Created By <a href="index.html">BlueAvengerZ</a></h3>
+   </footer>
+
+<!-- footer section End -->
+
+
+<!-- linker til javascript -->
+
+   <script src="../script/movie.js"></script>
+
+
+ </body>
+
+</html>

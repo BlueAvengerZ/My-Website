@@ -1,0 +1,300 @@
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <!-- linker til css filen -->
+
+    <link rel="stylesheet" href="../Css filer/Schedule.css">
+
+    <!-- gir tittel for nettsiden min -->
+
+    <title>Schedule</title>
+
+    <!-- Legger til script kode for menu-bar icon -->
+
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <!-- Legger til script kode for menu-bar, menu-bar icon, skrivene tekst og teams bokser -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+
+  </head>
+
+  <body>
+
+
+  <!-- menu-bar navigaistion Start -->
+
+  <!-- lager klasse for, men-bar, menu-icon, kallenavn min.
+       Derettter linker jeg de forsjellige sider og legger til menu-icon. -->
+
+  <nav class="menu-bar">
+
+    <div class="max-width">
+    <div class="nickname"> <a href="index.html">BlueAvengerZ<span>.BAZ</span></a></div>
+
+      <ul class="menu">
+
+        <li><a href="index.html">Home</a></li>
+        <li><a href="Movie.html">Movies</a></li>
+        <li><a href="Games.html">Games</a></li>
+        <li><a href="Game_Story.html">Story Game</a></li>
+        <li><a href="Schedule.html">Schedule</a></li>
+        <li><a href="Social_media.html">Social Media</a></li>
+        <li><a href="My_Projects.html">My Projects</a></li>
+        <li><a href="Report.html">My Report</a></li>
+
+      </ul>
+
+    <div class="menu-icon">
+       <i class="fas fa-bars"></i>
+    </div>
+
+  </div>
+
+</nav>
+
+<!-- menu-bar navigaistion End -->
+
+
+
+
+<!-- schedulepage section Start -->
+
+<section class="schedulepage">
+
+
+<!-- legger til seksjon, gir den en klasse.
+     Etter det lager jeg klasse for, tider, dager og fag.
+
+     Deretter legger jeg til dager og tid klasse nummer 2 i første rad,
+
+     i andre rad legger jeg til fag,
+       tid klasse nummer 1 og tid klasse nummer 2, med gitt tid,
+
+     i tredje rad legger jeg til fag og tid klasse nummer 2, med gitt tid,
+       men utenatt den første tid klasse nummer 2.
+
+     i fjerde rad legger jeg til fag, tid klasse nummer 2, med gitt tid
+       og tid klasse nummer 1, med gitt tid.
+
+     i femte rad legger jeg til tid klasse nummer 1 og fag.
+
+     i sjette rad legger jeg til bare tid klasse nummer 2, med gitt tid.
+
+     i syvende rad legger jeg til og fag tid klasse nummer 2, med gitt tid.
+
+     i åttende rad legger jeg til fag og tid klasse nummer 2, med gitt tid,
+       men utenatt den andre tid klasse nummer 2.
+
+     i niende rad legger jeg til fag, tid klasse nummer 1 og tid klasse nummer 2, med gitt tid.
+
+     i tiende rad legger jeg til fag og tid klasse nummer 2, uten gitt tid.
+
+     i ellefte rad legger jeg til bare tid klasse nummer 2, med gitt tid -->
+
+
+
+  <div class="max-width">
+
+    <table>
+
+  <!-- rad 1 -->
+
+        <tr>
+            <td class="tid2"></td>
+            <td class="dager">Mandag</td>
+            <td class="dager">Tirsdag</td>
+            <td class="dager">Onsdag</td>
+            <td class="dager">Torsdag</td>
+            <td class="dager">Fredag</td>
+         </tr>
+
+
+
+
+<!-- rad 2 -->
+
+         <tr>
+            <td rowspan="2" class="tid">08:45 - 09:45</td>
+            <td rowspan="2" class="YFF">Yrkesfaglig fordypning</td>
+            <td class="tid2">09:00</td>
+            <td rowspan="2" class="Matte">Mattematikk</td>
+            <td rowspan="2" class="Eng">Engelsk</td>
+            <td rowspan="2" class="Eng">Engelsk</td>
+         </tr>
+
+
+
+
+<!-- rad 3 -->
+
+         <tr>
+            <td rowspan="3" class="PH">Produksjon og Historiefortelling</td>
+         </tr>
+
+
+
+         <tr>
+            <td class="tid2"></td>
+            <td class="tid2">10 min</td>
+            <td class="tid2">10 min</td>
+            <td class="tid2">10 min</td>
+            <td class="tid2">10 min</td>
+         </tr>
+
+
+
+
+<!-- rad 4 -->
+
+         <tr>
+            <td rowspan="2" class="tid">09:55 - 10:40</td>
+            <td rowspan="2" class="YFF">Yrkesfaglig fordypning</td>
+            <td rowspan="3" class="TF">Teknologiforståelse</td>
+            <td rowspan="3" class="Nat">Naturfag</td>
+            <td rowspan="3" class="KØ">Kroppsøving</td>
+         </tr>
+
+
+          <tr>
+             <td class="tid2">10 min</td>
+         </tr>
+
+
+
+
+<!-- rad 5 -->
+
+          <tr>
+            <td class="tid">10:40 - 11:25</td>
+            <td class="Matte">Mattematikk</td>
+            <td class="PH">Produksjon og Historiefortelling</td>
+          </tr>
+
+
+
+<!-- rad 6 -->
+
+          <tr>
+            <td rowspan="2" class="tid2"></td>
+            <td rowspan="2" class="tid2">45 min</td>
+            <td rowspan="2" class="tid2">45 min</td>
+            <td class="tid2">35 min</td>
+            <td rowspan="2" class="tid2">45 min</td>
+            <td rowspan="2" class="tid2">45 min</td>
+         </tr>
+
+
+
+<!-- rad 7 -->
+
+          <tr>
+            <td rowspan="3" class="PH">Produksjon og Historiefortelling</td>
+          </tr>
+
+
+          <tr>
+            <td rowspan="3" class="tid">12:10 - 13:40</td>
+            <td rowspan="3"class="KOP">Konseptutvikling og Programering</td>
+            <td rowspan="3" class="YFF">Yrkesfaglig fordypning</td>
+            <td rowspan="3 " class="midttime">Midttime 12:10 - 12:55</td>
+            <td rowspan="3" class="KoP">Konseptutvikling og Programering</td>
+          </tr>
+
+
+           <tr></tr>
+
+
+
+<!-- rad 8 -->
+
+          <tr>
+            <td rowspan="6" class="tid2">13:30</td>
+          </tr>
+
+
+          <tr>
+            <td class="tid2"></td>
+            <td class="tid2">10 min</td>
+            <td class="tid2">10 min</td>
+            <td rowspan="4"class="TF">Teknologiforståels</td>
+            <td class="tid2">10 min</td>
+         </tr>
+
+
+
+<!-- rad 9 -->
+
+          <tr>
+            <td rowspan="4" class="tid">13:50 - 14:35</td>
+            <td rowspan="4" class="Eng">Engelsk</td>
+            <td rowspan="4" class="YFF">Yrkesfaglig fordypning</td>
+            <td rowspan="4" class="KoP">Konseptutvikling og Programering</td>
+          </tr>
+
+
+           <tr></tr>
+
+           <tr></tr>
+
+
+          <tr>
+            <td class="tid2">10 min</td>
+          </tr>
+
+
+
+<!-- rad 10 -->
+
+          <tr>
+            <td rowspan="2" class="tid2"></td>
+            <td rowspan="2" class="tid2"></td>
+            <td rowspan="2" class="tid2"></td>
+            <td rowspan="2"class="tid2"></td>
+            <td class="TF">Teknologiforståels</td>
+            <td rowspan="2"class="tid2"></td>
+          </tr>
+
+
+<!-- rad 11 -->
+
+          <tr>
+            <td class="tid2">15:20</td>
+          </tr>
+
+
+      </div>
+
+   </table>
+
+</section>
+
+<!-- schedulepage section End -->
+
+
+
+
+<!-- footer section Start -->
+
+
+
+<!-- legger til bunntekst -->
+
+   <footer>
+     <h3>Created By <a href="index.html">BlueAvengerZ</a></h3>
+   </footer>
+
+<!-- footer section End -->
+
+
+
+<!-- linker til javascript -->
+
+  <script src="../script/Schedule.js"></script>
+
+
+ </body>
+
+</html>

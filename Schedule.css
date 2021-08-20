@@ -1,0 +1,460 @@
+/* Font styling Start */
+
+
+/* legger til font */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* Font styling End */
+
+
+
+/* all elements styling Start */
+
+
+/* gir alle elementer posisjon og størrelse. også fjerner text stil til alle elementer  */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+
+/* all elements styling End */
+
+
+
+
+/* custom scroll bar Start */
+
+
+
+/* gir scrollbar bredde og oransje bakgunnsfarge.
+   Også hvis man har pilen over scrollbar bytter bakgunnsfarge til blå */
+
+  ::-webkit-scrollbar {
+      width: 10px;
+
+  }
+
+  ::-webkit-scrollbar-thumb {
+      background: orange;
+
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+      background: blue;
+  }
+
+/* custom scroll bar End */
+
+
+
+
+
+/* menu-bar styling Start */
+
+
+
+/* gir posisjon for menu bar. */
+
+.max-width {
+  padding: 0 80px;
+  margin: auto;
+}
+
+
+/* gir menu bar posisjon, bredde, verdi og font.
+  også hvor mye tid skal den ta, til menu bar får bakgunnsfarge blå. */
+
+.menu-bar {
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+  padding: 30px 0;
+  font-family: "Ubuntu", sans-serif;
+  transition: 0.3s;
+}
+
+
+
+/* når man blar ned, får menu bar bakgunnsfarge blå. */
+
+.menu-bar.sticky {
+  padding: 15px 0;
+  background: blue;
+}
+
+
+/* gir posisjon for menu bar og mellerom */
+
+.menu-bar .max-width {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+/* gir hvit farge til kallenavn min og hvor mye tykt skal den være */
+
+.menu-bar .nickname a {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  }
+
+
+/* gir blå farge til forkortelse av kallenavn min. */
+
+.menu-bar .nickname a span{
+  color: blue;
+
+}
+
+/* når man blar ned, bytter forkortelse av kallenavn min, farge til hvit. */
+
+.menu-bar.sticky .nickname a span {
+  color: white;
+}
+
+
+/* gir retning for menu bar tittelene */
+
+.menu-bar .menu li {
+  display: inline-block;
+}
+
+
+/* gir fontstørrelse og hvit farge til menu bar tittel.
+   Også hvor mye tykt skal den være og hvor mye tid skal den ta, til den bytter farge. */
+
+.menu-bar .menu li a {
+  color: white;
+  font-size: 17px;
+  font-weight: 400;
+  margin-left: 14px;
+  transition: color 0.3s;
+}
+
+
+/* menu bar tittel får blå farge, når man tar pilen over den. */
+
+.menu-bar .menu li a:hover {
+  color: blue;
+
+}
+
+
+/* når menu bar har bakgunnsfarge blå. får menu bar tittel farge hvit, når man tar pilen over den. */
+
+.menu-bar.sticky .menu li a:hover {
+  color: white;
+}
+
+/* menu-bar styling End */
+
+
+
+
+/* menu-icon styling Start */
+
+
+
+/* gir menu icon og kryss icon hvit farge og fontstørrelse.
+   Også sier jeg at, de skal ikke vises på skjermen og
+   de skal få peke tegn, når man har pil over den. */
+
+.menu-icon {
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+  display: none;
+}
+
+/* menu-icon styling End */
+
+
+
+
+/* schedulepage styling Start */
+
+
+/* legger til bakgrunn for schedulepage min. etter det gir jeg font, hvit farge, posisjon
+   og bakgrunnshøyde til Gamespage min. Også sier jeg at, bakgrunne skal dekke hele schedulepage. */
+
+  .schedulepage {
+    display: flex;
+    background: url("../Matriale/Bilder/background.jpg") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+
+/* gir posisjon, maks bredde og høyde til timeplan min.
+   også legger jeg til strekene rumdt timeplan min og cellene.  */
+
+table, td {
+  margin-top: 12%;
+  border: 3px solid black;
+  border-collapse: collapse;
+  max-width: 100%;
+  height: 80%;
+
+
+}
+
+/* gir posisjon, bredde og høyde til cellene. */
+
+  td {
+
+    height: 50px;
+    width: 150px;
+    text-align: center;
+  }
+
+
+/* gir grå bakgrunn til tid klasse nummer 1 og dagene. */
+
+  .tid, .dager {
+    background: grey;
+  }
+
+
+/* gir lyse grå bakgrunn til tid klasse nummer 2. */
+
+  .tid2 {
+    background: lightgrey;
+  }
+
+
+/* gir hvit bakgrunn til midttime klasse. */
+
+  .midttime {
+    background: white;
+  }
+
+
+/* gir hvit bakgrunn til YFF klasse. */
+
+  .YFF {
+    background: white;
+  }
+
+
+/* gir blå bakgrunn til Matte klasse. */
+
+  .Matte {
+    background: blue;
+  }
+
+
+/* gir gul bakgrunn til KoP klasse. */
+
+  .KoP {
+    background: yellow;
+  }
+
+
+/* gir lilla bakgrunn til Eng klasse. */
+
+  .Eng {
+    background: purple;
+  }
+
+
+/* gir rød bakgrunn til PH klasse. */
+
+  .PH {
+    background: red;
+  }
+
+/* gir rosa bakgrunn til TF klasse. */
+
+  .TF {
+    background: pink;
+  }
+
+
+/* gir lyse grønn bakgrunn til Nat klasse. */
+
+  .Nat {
+    background: lime;
+  }
+
+
+/* gir grønn bakgrunn til KØ klasse. */
+
+  .KØ {
+    background: green;
+  }
+
+/* schedulepage styling End */
+
+
+
+
+/* footer section styling Start */
+
+
+/* gir bakgrunn blå og posisjon til under tekst. */
+
+  footer {
+      background: blue;
+      padding: 14px 23px;
+      text-align: center;
+  }
+
+
+/* gir fontstørrelse og hvit farge til under tekst 1. også hvor mye tykt skal den være og
+   fjerner text stil. */
+
+  footer h3 {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+  }
+
+
+/* gir fontstørrelse og hvit farge til under tekst 2. også fjerner jeg text stil til den. */
+
+  footer a {
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+  }
+
+
+/* gir text stil til under tekst 2 og når man tar pilen over den, så får den linje under. */
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+/* footer section styling End */
+
+
+
+
+/* responsive media query Start */
+
+
+@media (max-width: 1000px) {
+
+
+/* når bredde er 1000 til skjermen, så skal max-width klasser bytte posisjon */
+
+  .max-width {
+      padding: 0 50px;
+  }
+}
+
+
+@media (max-width: 978px) {
+
+/* gir maks bredde til klasse max-width. */
+
+  .max-width {
+    max-width: 800px;
+  }
+
+
+/* når bredde er 978 til skjermen, så skal menu icon vises på skjermen */
+
+ .menu-icon {
+     display: block;
+     z-index: 4;
+ }
+
+
+ /* når bredde er 978 til skjermen, så skal kryss icon vises på skjermen, men først klikk på menu icon  */
+
+ .menu-icon i.active:before {
+     content: "\f00d";
+ }
+
+
+ /* gir posisjon, høyde, bredde og bakgrunn svart til menu bar bakgrunn. også hvor mye tid skal ta,
+    til menu bar popper opp, når man klikker på menu icon. Det gjelder bare når bredde til skjermen er 978. */
+
+  .menu-bar .menu {
+    position: fixed;
+    height:100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    padding-top: 80px;
+    background: black;
+    text-align: center;
+    transition: 0.3s;
+
+  }
+
+
+/* gir posisjon til menu bar og den skal aktivere, når man klikker på menu icon.
+   Det gjelder bare når bredde til skjermen er 978. */
+
+  .menu-bar .menu.active {
+    left: 0;
+  }
+
+
+/* gir retning til menu bar tittelene. Det gjelder bare mår bredde til skjermen er 978. */
+
+  .menu-bar .menu li {
+    display: block;
+  }
+
+
+/* gir retning til menu bar tittelene. Det gjelder bare når bredde til skjermen er 978. */
+
+  .menu-bar .menu li a {
+    display: inline-block;
+    margin: 25px 0;
+    font-size: 25px;
+  }
+
+
+/* gir posisjon og størrelse til timeplan min. Det gjelder bare når bredde til skjermen er 978. */
+
+  table, td {
+    margin-top: 10%;
+    margin-right: 5%;
+    font-size: 12px;
+
+  }
+
+}
+
+
+@media (max-width: 950px) {
+
+
+/* gir posisjon og størrelse til timeplan min. Det gjelder bare når bredde til skjermen er 950. */
+
+  table, td {
+    margin-top: 10%;
+    margin-right: 5%;
+    font-size: 10px;
+
+  }
+}
+
+
+@media (max-width: 629px) {
+
+
+/* gir posisjon og størrelse til timeplan min. Det gjelder bare når bredde til skjermen er 629. */
+
+  table, td {
+    margin-top: 10%;
+    margin-right: 5%;
+    font-size: 10px;
+
+  }
+}
+
+/* responsive media query End */
